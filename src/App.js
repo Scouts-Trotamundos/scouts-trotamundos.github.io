@@ -1,12 +1,12 @@
-// import logo from './logo.svg';
-import './assets/css/main.css';
 
+import React, { useState  } from 'react';
+import './assets/css/main.css';
 import './assets/css/custom.css';
-import React from 'react';
+
 import { Route, HashRouter } from "react-router-dom";
 import NavigationBar from './components/NavigationBar';
 import SideBar from './components/SideBar';
-// import Menu from './components/Menu';
+import Menu from './components/Menu';
 
 import Sections from './pages/Sections';
 import Contact from './pages/Contact';
@@ -21,15 +21,21 @@ import Esculta from './pages/section/Esculta';
 import Clan from './pages/section/Clan';
 
 const App = () => {
+  const [isToggle, setToggle] = useState(false)
+
   return (
     <div className="App">
       <HashRouter>
         {/* Wrapper */}
         <div id="wrapper">
+          {/* <!-- Menu --> */}
+          <Menu isToggle={isToggle}></Menu>
+
           {/* Header */}
-          <NavigationBar></NavigationBar>
+          <NavigationBar isToggle={isToggle} onToggleChange={setToggle}></NavigationBar>
           {/* Main */}
           <div id="main">
+
             {/* <Route exact path="/" component={UnderConstruction} /> */}
             <Route exact path="/" component={AboutUs} />
             <Route path="/sections" component={Sections} />
@@ -49,4 +55,5 @@ const App = () => {
     </div>
   );
 }
+
 export default App;

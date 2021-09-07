@@ -26,26 +26,22 @@ class NavigationBar extends Component {
       })
 
   }
-
-
-
   resetBtnDisplay = (e) => {
     this.setState({
       btnDisplay: "none"
     })
   }
+  
+  toggleMenu = (e) => {
+    this.props.onToggleChange(!this.props.isToggle)
+  }
   render() {
     return (
       <HashRouter>
         <div>
-
           <header id="header">
-
             <h1><NavLink to="/" onClick={this.resetBtnDisplay} >GS Trotamundos 697</NavLink></h1>
-
-
             <nav className="links">
-
               <ul>
                 <div className="dropdown">
                   <button className="dropbtn" onClick={this.handleDropdownMenuBtn} >Secciones</button>
@@ -63,7 +59,13 @@ class NavigationBar extends Component {
                 <li><NavLink to="/contact" onClick={this.resetBtnDisplay} >Contacto</NavLink></li>
               </ul>
             </nav>
-
+            <nav className="main">
+							<ul>
+								<li className="menu">
+									<div className="fa-bars" onClick={this.toggleMenu}>Menu</div>
+								</li>
+							</ul>
+						</nav>
           </header>
         </div>
       </HashRouter>

@@ -14,7 +14,6 @@ body{
 	cursor: pointer;
 	outline: inherit;
 }
-/* .dropbtn:active { border-style: outset;} */
 .dropdown {
   position: static;
   display: inline-block !important;
@@ -80,4 +79,8 @@ button:hover,
 
 #sidebar > section > div > div > article > header > h3 > svg{
   margin-right: 0.4em;
+}
+
+#menu{
+  visibility: visible;
 }
