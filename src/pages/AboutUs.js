@@ -11,7 +11,7 @@ class AboutUs extends Component {
         <article className="post">
           <header>
             <div className="title">
-              <h2><a href="single.html">Preguntas y respuestas frequentes sobre Grupo Scout Trotamundos 697</a></h2>
+              <h2><a href="single.html">Preguntas y respuestas frecuentes sobre Grupo Scout Trotamundos 697</a></h2>
               {/* <p>Lorem ipsum dolor amet nullam consequat etiam feugiat</p> */}
             </div>
 
@@ -28,7 +28,7 @@ class AboutUs extends Component {
 
           <h2>
             ¿CUÁNDO Y DÓNDE NOS REUNIMOS?</h2>
-          <p>Nuestro local se encuentra en la calle Batres nº 3. Nos reunimos ahí todos los sábados, de 17:00 a 20:00, excepto en casos puntuales como salidas o campamentos, en los que se avisaría con tiempo de antelación de dónde se quedaría.</p>
+          <p>Nuestro local lo puedes encontrar en la sección <NavLink to="/ubication">Ubicación</NavLink>.<br></br>Nos reunimos ahí todos los sábados, de 17:00 a 20:00, excepto en casos puntuales como salidas o campamentos, en los que se avisaría con tiempo de antelación de dónde se quedaría.</p>
 
           <h2>¿QUIÉNES SON LOS SCOUTERS?</h2>
           <p>Son voluntarios y voluntarias que programan las actividades y están a cargo de los chicos y chicas, los cuales tienen una formación amplia y diversa (profesores, pedagogos, enfermeros…), así como la titulación requerida por la Comunidad de Madrid para poder organizar actividades juveniles.</p>
@@ -64,18 +64,12 @@ class AboutUs extends Component {
             Cuando los chicos y chicas entran en Trotamundos se les da la base de la pañoleta, en nuestro caso de dos colores, a la que cosen las cintas correspondientes a cada sección cuando hacen la promesa de la misma.<br></br>
             Así, la pañoleta y la promesa simbolizan el compromiso del scout con su sección, su grupo y una forma de vida que se concreta en ser un buen ciudadano y ciudadana y preservar la naturaleza disfrutando de ella.</p>
 
-          <h2>¿QUÉ ES LA PAÑOLETA?</h2>
-          <p>Es el pañuelo que llevamos colgado al cuello y que representa los colores de nuestro grupo.
-            Cuando los chicos y chicas entran en Trotamundos se les da la base de la pañoleta, en nuestro caso de dos colores, a la que cosen las cintas correspondientes a cada sección cuando hacen la promesa de la misma.<br></br>
-            Así, la pañoleta y la promesa simbolizan el compromiso del scout con su sección, su grupo y una forma de vida que se concreta en ser un buen ciudadano y ciudadana y preservar la naturaleza disfrutando de ella.
-          </p>
-
           <h2>¿PERTENECÉIS A ALGUNA FEDERACIÓN SCOUT?</h2>
           <p>Nuestro grupo es miembro de Exploradores de Madrid que es una federación perteneciente a ASDE Scouts de España.</p>
 
           <h2>¿TIENES MÁS DUDAS?</h2>
           <p>
-            Si quieres consultarnos cualquier otra cosa, no dudes en rellenar el formulario de la seccion de CONTACTO.</p>
+            Si quieres consultarnos cualquier otra cosa, no dudes en rellenar el formulario de la seccion de <NavLink to="/contact">Contacto</NavLink>.</p>
           <div>
           </div>
         </article>

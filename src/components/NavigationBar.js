@@ -43,7 +43,7 @@ class NavigationBar extends Component {
 
               <ul>
                 <div className="dropdown">
-                  <button className="dropbtn" onClick={this.handleDropdownMenuBtn} >Secciones</button>
+                  {/* <button className="dropbtn" onClick={this.handleDropdownMenuBtn} >Secciones</button> */}
                   <div className="dropdown-content" style={{ display: this.state.btnDisplay }}>
                     <NavLink to="/section/castores">Colonia Ottawa</NavLink>
                     <NavLink to="/section/manada">Manada Natoo</NavLink>
@@ -52,10 +52,10 @@ class NavigationBar extends Component {
                     <NavLink to="/section/clan">Clan Bushido</NavLink>
                   </div>
                 </div>
-                <li><NavLink to="/about">Sobre nosotr@s</NavLink></li>
+                {/* <li><NavLink to="/about">Sobre nosotr@s</NavLink></li>
                 <li><NavLink to="/faq">Información</NavLink></li>
                 <li><NavLink to="/ubication">Ubicación</NavLink></li>
-                <li><NavLink to="/contact">Contacto</NavLink></li>
+                <li><NavLink to="/contact">Contacto</NavLink></li> */}
               </ul>
             </nav>
 

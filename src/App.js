@@ -11,6 +11,7 @@ import Contact from './pages/Contact';
 import FAQ from './pages/FAQ';
 import AboutUs from './pages/AboutUs';
 import Ubication from './pages/Ubication';
+import UnderConstruction from './pages/UnderConstruction';
 
 import Castores from './pages/section/Castores';
 import Manada from './pages/section/Manada';
@@ -32,7 +33,7 @@ function App() {
 
           {/* Main */}
           <div id="main">
-            <Route exact path="/" component={AboutUs}/>
+            <Route exact path="/" component={UnderConstruction}/>
             <Route path="/sections" component={Sections} />
             <Route path="/about" component={AboutUs} />
             <Route path="/faq" component={FAQ} />
