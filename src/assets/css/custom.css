@@ -74,7 +74,10 @@ button:hover,
   color: #563070 !important;
 }
 
+#sidebar > section > div > div > article > header > h3{
+  font-size: 1.0em;
+}
 
-/* .dropdown:hover .dropdown-content {
-  display: block;
-} */
+#sidebar > section > div > div > article > header > h3 > svg{
+  margin-right: 0.4em;
+}

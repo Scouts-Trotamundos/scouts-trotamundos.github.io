@@ -17,45 +17,50 @@ class NavigationBar extends Component {
     e.preventDefault();
     let display = this.state.btnDisplay;
 
-    ("none" === display)?
-    this.setState({
-      btnDisplay: "block"
-    }):
+    ("none" === display) ?
+      this.setState({
+        btnDisplay: "block"
+      }) :
+      this.setState({
+        btnDisplay: "none"
+      })
+
+  }
+
+
+
+  resetBtnDisplay = (e) => {
     this.setState({
       btnDisplay: "none"
     })
-
   }
   render() {
-
-
-
     return (
       <HashRouter>
         <div>
 
           <header id="header">
 
-            <h1><a href="index.html">GS Trotamundos 697</a></h1>
+            <h1><NavLink to="/" onClick={this.resetBtnDisplay} >GS Trotamundos 697</NavLink></h1>
 
 
             <nav className="links">
 
               <ul>
                 <div className="dropdown">
-                  {/* <button className="dropbtn" onClick={this.handleDropdownMenuBtn} >Secciones</button> */}
+                  <button className="dropbtn" onClick={this.handleDropdownMenuBtn} >Secciones</button>
                   <div className="dropdown-content" style={{ display: this.state.btnDisplay }}>
-                    <NavLink to="/section/castores">Colonia Ottawa</NavLink>
-                    <NavLink to="/section/manada">Manada Natoo</NavLink>
-                    <NavLink to="/section/tropa">Tropa Siksika</NavLink>
-                    <NavLink to="/section/esculta">Esculta Ragnarok</NavLink>
-                    <NavLink to="/section/clan">Clan Bushido</NavLink>
+                    <NavLink to="/section/castores" onClick={this.resetBtnDisplay} >Colonia Ottawa</NavLink>
+                    <NavLink to="/section/manada" onClick={this.resetBtnDisplay} >Manada Natoo</NavLink>
+                    <NavLink to="/section/tropa" onClick={this.resetBtnDisplay} >Tropa Siksika</NavLink>
+                    <NavLink to="/section/esculta" onClick={this.resetBtnDisplay} >Esculta Ragnarok</NavLink>
+                    <NavLink to="/section/clan" onClick={this.resetBtnDisplay} >Clan Bushido</NavLink>
                   </div>
                 </div>
-                {/* <li><NavLink to="/about">Sobre nosotr@s</NavLink></li>
-                <li><NavLink to="/faq">Información</NavLink></li>
-                <li><NavLink to="/ubication">Ubicación</NavLink></li>
-                <li><NavLink to="/contact">Contacto</NavLink></li> */}
+                <li><NavLink to="/about" onClick={this.resetBtnDisplay} >Sobre nosotr@s</NavLink></li>
+                <li><NavLink to="/faq" onClick={this.resetBtnDisplay}>Información</NavLink></li>
+                <li><NavLink to="/ubication" onClick={this.resetBtnDisplay} >Ubicación</NavLink></li>
+                <li><NavLink to="/contact" onClick={this.resetBtnDisplay} >Contacto</NavLink></li>
               </ul>
             </nav>
 
