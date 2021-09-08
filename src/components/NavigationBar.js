@@ -5,6 +5,9 @@ import {
   HashRouter
 } from "react-router-dom";
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBars } from "@fortawesome/free-solid-svg-icons"
+
 class NavigationBar extends Component {
   constructor() {
     super();
@@ -35,6 +38,10 @@ class NavigationBar extends Component {
   toggleMenu = (e) => {
     this.props.onToggleChange(!this.props.isToggle)
   }
+  mainOnClickHandler= (e) => {
+    console.log("TEST")
+    // this.props.isToggle ? this.props.onToggleChange(this.props.isToggle) : this.props.onToggleChange(!this.props.isToggle)
+  }
   render() {
     return (
       <HashRouter>
@@ -62,7 +69,7 @@ class NavigationBar extends Component {
             <nav className="main">
 							<ul>
 								<li className="menu">
-									<div className="fa-bars" onClick={this.toggleMenu}>Menu</div>
+									<div onClick={this.toggleMenu} id="menuBarIcon"><FontAwesomeIcon icon={faBars} >Menu</FontAwesomeIcon></div>
 								</li>
 							</ul>
 						</nav>

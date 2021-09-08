@@ -23,18 +23,23 @@ import Clan from './pages/section/Clan';
 const App = () => {
   const [isToggle, setToggle] = useState(false)
 
+    
+  function mainOnClickHandler(e){
+    isToggle? setToggle(isToggle) : setToggle(!isToggle)
+    console.log(e)
+  }
   return (
     <div className="App">
       <HashRouter>
         {/* Wrapper */}
         <div id="wrapper">
           {/* <!-- Menu --> */}
-          <Menu isToggle={isToggle}></Menu>
+          <Menu isToggle={isToggle} onToggleChange={setToggle}></Menu>
 
           {/* Header */}
-          <NavigationBar isToggle={isToggle} onToggleChange={setToggle}></NavigationBar>
+          <NavigationBar isToggle={isToggle} onToggleChange={setToggle}  ></NavigationBar>
           {/* Main */}
-          <div id="main">
+          <div id="main" onClick={mainOnClickHandler}>
 
             {/* <Route exact path="/" component={UnderConstruction} /> */}
             <Route exact path="/" component={AboutUs} />
