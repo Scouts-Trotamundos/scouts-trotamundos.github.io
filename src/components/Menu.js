@@ -1,13 +1,26 @@
 import React, { Component } from 'react';
 
 class Menu extends Component {
+  constructor() {
+    super();
+  }
+
+  toggleMenu = (e) => {
+    console.log("TEST")
+    // this.props.onToggleMenu(!this.props.isToggle)
+    this.props.onToggleChange(!this.props.isToggle)
+  }
+
   render() {
     return (
       <div>
-        <section id="menu" style={{ transform: this.props.isToggle?'translateX(25em)':"none"}}>
+        <section id="menu" style={{
+          transform: this.props.isToggle?'translateX(25em)':"none",
+          }}
+        >
 
           {/* <!-- Search --> */}
-          <section>
+          <section >
             <form className="search" method="get" action="#">
               <input type="text" name="query" placeholder="Search" />
             </form>
