@@ -1,7 +1,5 @@
 
 import React, { useState } from 'react';
-import './assets/css/main.css';
-import './assets/css/custom.css';
 
 import { Route, HashRouter } from "react-router-dom";
 import NavigationBar from './components/NavigationBar';
@@ -40,7 +38,7 @@ const App = () => {
           <NavigationBar isToggle={isToggle} onToggleChange={setToggle}  ></NavigationBar>
 
           {(process.env.REACT_APP_ENVIRONMENT === 'dev') ? (
-            <div id="main" onClick={mainOnClickHandler}>
+            <div id="main-articles" onClick={mainOnClickHandler}>
               <div>
                 <Route exact path="/" component={AboutUs} />
                 <Route path="/sections" component={Sections} />

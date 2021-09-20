@@ -1,0 +1,115 @@
+// body{
+//   background: #f1f1f1;
+// }
+
+#header{
+  div > a{ 
+    padding:0;
+    font-family: "Raleway", Helvetica, sans-serif;
+    border-bottom: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding-left: 1em;
+    padding-right: 1.1em;
+    background-color: inherit;
+  }
+}
+
+// #header{
+//   background: #f1f1f1;
+//   font-family: "Raleway", Helvetica, sans-serif;
+//   // border-bottom: 0;
+//   text-transform: uppercase;
+
+//   div.nav-item.show.dropdown > div > a,/*Dropdown list*/
+//   div > a /* NavBar links*/{
+//     font-size: 0.7em;
+//     font-weight: 400;
+//     letter-spacing: 0.25em;
+//     // padding-left: 1.5em;
+//     background-color: inherit !important;
+//   }
+
+//   #nav-dropdown{
+//     font-size: inherit !important;
+//     background-color: inherit;
+//     // padding-left: 1.5em;
+//   }
+//   .nav-title{
+//     background-color: inherit !important;
+//     font-size: 0.85em;
+//     font-weight: 800;
+//     letter-spacing: 0.25em;
+//     text-transform: uppercase;
+//     // padding-left: 1.5em;
+//   }
+//   .dropdown {
+//     position: static;
+//     display: inline-block !important;
+//     -moz-flex: 1;
+//     -webkit-flex: 1;
+//     -ms-flex: 1;
+//     flex: 1;
+//     height: inherit;
+//     line-height: inherit;
+//     overflow: visible !important;
+//     border-bottom: 0;
+//     color: inherit;
+//     text-decoration: none;
+//     font-family: "Raleway", Helvetica, sans-serif;
+//     font-size: 0.7em;
+//     font-weight: 400;
+//     letter-spacing: 0.25em;
+//     text-transform: uppercase;
+//   }
+  
+//   .dropdown-content {
+//     display: none;
+//     position: absolute;
+//     background-color: inherit;
+//     min-width: 160px;
+//     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+//     z-index: 1;
+//     a {
+//       color: black;
+//       padding-left: 12px;
+//       text-decoration: none;
+//       display: block;
+//     }
+//     a:hover {background-color: #f1f1f1}
+//   }
+  
+//   .menu{
+//     visibility: hidden;
+//     // padding-right: 1.5em;
+//     // padding-left: 1.5em;
+//   }
+
+// }
+
+
+
+// #menuBarIcon{
+//   padding-left: 2em;
+//   padding-right: 0.7em; 
+//   margin-right: 1.5em;
+// }
+
+// #toggleable-navbar{
+//   @media (max-width: 767px){
+//     display:none !important;
+//   } 
+// }
+// #menuBarIcon{
+//   display: none !important;
+
+//    @media (max-width: 767px){
+//     align-items: center;
+//     display: flex !important;
+//   } 
+// }
+// @media only screen and (max-width: 600px) {
+//   .menu{
+//     visibility: visible;
+//   }
+// }

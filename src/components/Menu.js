@@ -1,10 +1,6 @@
 import React, { Component } from 'react';
 
 class Menu extends Component {
-  constructor() {
-    super();
-  }
-
   toggleMenu = (e) => {
     console.log("TEST")
     // this.props.onToggleMenu(!this.props.isToggle)

@@ -1,12 +1,14 @@
 // create a react component named NavigationBar
 import React, { Component } from 'react';
 import {
-  NavLink,
   HashRouter
 } from "react-router-dom";
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars } from "@fortawesome/free-solid-svg-icons"
+import Nav from 'react-bootstrap/Nav';
+import NavDropdown from 'react-bootstrap/NavDropdown';
+import Container from 'react-bootstrap/Container'
+import Navbar from 'react-bootstrap/Navbar'
+import { IndexLinkContainer } from 'react-router-bootstrap';
 
 class NavigationBar extends Component {
   constructor() {
@@ -16,6 +18,7 @@ class NavigationBar extends Component {
       btnDisplay: "none",
     }
   }
+
   handleDropdownMenuBtn = (e) => {
     e.preventDefault();
     let display = this.state.btnDisplay;
@@ -34,7 +37,6 @@ class NavigationBar extends Component {
       btnDisplay: "none"
     })
   }
-
   toggleMenu = (e) => {
     this.props.onToggleChange(!this.props.isToggle)
   }
@@ -46,43 +48,117 @@ class NavigationBar extends Component {
     return (
       <HashRouter>
         <div>
-          <header id="header">
-            <h1><NavLink to="/" onClick={this.resetBtnDisplay} >GS Trotamundos 697</NavLink></h1>
-            {(process.env.REACT_APP_ENVIRONMENT === 'dev') ? (
-              <nav className="links">
-                <ul>
-                  <div className="dropdown">
-                    <button className="dropbtn" onClick={this.handleDropdownMenuBtn} >Secciones</button>
-                    <div className="dropdown-content" style={{ display: this.state.btnDisplay }}>
-                      <NavLink to="/section/castores" onClick={this.resetBtnDisplay} >Colonia Ottawa</NavLink>
-                      <NavLink to="/section/manada" onClick={this.resetBtnDisplay} >Manada Natoo</NavLink>
-                      <NavLink to="/section/tropa" onClick={this.resetBtnDisplay} >Tropa Siksika</NavLink>
-                      <NavLink to="/section/esculta" onClick={this.resetBtnDisplay} >Esculta Ragnarok</NavLink>
-                      <NavLink to="/section/clan" onClick={this.resetBtnDisplay} >Clan Bushido</NavLink>
-                    </div>
-                  </div>
-                  <li><NavLink to="/about" onClick={this.resetBtnDisplay} >Sobre nosotr@s</NavLink></li>
-                  <li><NavLink to="/faq" onClick={this.resetBtnDisplay}>Información</NavLink></li>
-                  <li><NavLink to="/ubication" onClick={this.resetBtnDisplay} >Ubicación</NavLink></li>
-                  <li><NavLink to="/contact" onClick={this.resetBtnDisplay} >Contacto</NavLink></li>
-                </ul>
-              </nav>
-            ) : (
-              null
-            )}
+          <Navbar bg="light" expand="lg" id="header">
+            <Container>
+              <IndexLinkContainer to="/">
+                <Navbar.Brand href="/">GS Trotamundos 697</Navbar.Brand>
+              </IndexLinkContainer>
+              <Navbar.Toggle aria-controls="basic-navbar-nav" />
+              <Navbar.Collapse id="basic-navbar-nav">
+                <NavDropdown title="Secciones" id="nav-dropdown">
+                  <IndexLinkContainer to="/section/castores">
+                    <NavDropdown.Item eventKey="4.1">Colonia Ottawa</NavDropdown.Item>
+                  </IndexLinkContainer>
+                  <IndexLinkContainer to="/section/manada">
+                    <NavDropdown.Item eventKey="4.2">Manada Natoo</NavDropdown.Item>
+                  </IndexLinkContainer>
+                  <IndexLinkContainer to="/section/tropa">
+                    <NavDropdown.Item eventKey="4.3">Tropa Siksika</NavDropdown.Item>
+                  </IndexLinkContainer>
+                  <IndexLinkContainer to="/section/esculta">
+                    <NavDropdown.Item eventKey="4.4">Esculta Ragnarok</NavDropdown.Item>
+                  </IndexLinkContainer>
+                  <IndexLinkContainer to="/section/clan">
+                    <NavDropdown.Item eventKey="4.5">Clan Bushido</NavDropdown.Item>
+                  </IndexLinkContainer>
+                </NavDropdown>
+                <Nav className="me-auto">
+                  <IndexLinkContainer to="/about">
+                    <Nav.Link eventKey="2">
+                      Sobre nosotr@s
+                    </Nav.Link>
+                  </IndexLinkContainer >
+                  <IndexLinkContainer to="/faq">
+                    <Nav.Link eventKey="3">
+                      Información
+                    </Nav.Link>
+                  </IndexLinkContainer >
+                  <IndexLinkContainer to="/ubication">
+                    <Nav.Link eventKey="3">
+                      Ubicación
+                    </Nav.Link>
+                  </IndexLinkContainer >
+                  <IndexLinkContainer to="/contact">
+                    <Nav.Link eventKey="3">
+                      Contacto
+                    </Nav.Link>
+                  </IndexLinkContainer >
 
-            {(process.env.REACT_APP_ENVIRONMENT === 'dev') ? (
-              <nav className="main">
+                </Nav>
+              </Navbar.Collapse>
+            </Container>
+          </Navbar>
+          {/* <header id="header"> */}
+          {/* <Nav variant="pills" activeKey="1" id="toggleable-navbar">
+              <Container>
+                <IndexLinkContainer to="/">
+                  <Nav.Item>
+                    <Nav.Link eventKey="1" className="nav-title" href="/">
+                      GS Trotamundos 697
+                    </Nav.Link>
+                  </Nav.Item>
+                </IndexLinkContainer>
+                <NavDropdown.Divider />
+                <NavDropdown title="Secciones" id="nav-dropdown">
+                  <IndexLinkContainer to="/section/castores">
+                    <NavDropdown.Item eventKey="4.1">Colonia Ottawa</NavDropdown.Item>
+                  </IndexLinkContainer>
+                  <IndexLinkContainer to="/section/manada">
+                    <NavDropdown.Item eventKey="4.2">Manada Natoo</NavDropdown.Item>
+                  </IndexLinkContainer>
+                  <IndexLinkContainer to="/section/tropa">
+                    <NavDropdown.Item eventKey="4.3">Tropa Siksika</NavDropdown.Item>
+                  </IndexLinkContainer>
+                  <IndexLinkContainer to="/section/esculta">
+                    <NavDropdown.Item eventKey="4.4">Esculta Ragnarok</NavDropdown.Item>
+                  </IndexLinkContainer>
+                  <IndexLinkContainer to="/section/clan">
+                    <NavDropdown.Item eventKey="4.5">Clan Bushido</NavDropdown.Item>
+                  </IndexLinkContainer>
+                </NavDropdown>
+                <IndexLinkContainer to="/about">
+                  <Nav.Link eventKey="2">
+                    Sobre nosotr@s
+                  </Nav.Link>
+                </IndexLinkContainer >
+                <IndexLinkContainer to="/faq">
+                  <Nav.Link eventKey="3">
+                    Información
+                  </Nav.Link>
+                </IndexLinkContainer >
+                <IndexLinkContainer to="/ubication">
+                  <Nav.Link eventKey="3">
+                    Ubicación
+                  </Nav.Link>
+                </IndexLinkContainer >
+                <IndexLinkContainer to="/contact">
+                  <Nav.Link eventKey="3">
+                    Contacto
+                  </Nav.Link>
+                </IndexLinkContainer >
+              </Container>
+            </Nav>
+            <Nav className="justify-content-end main" id="toggleable-menu-sidebar">
+              <Nav.Item onClick={this.toggleMenu}>
                 <ul>
                   <li className="menu">
                     <div onClick={this.toggleMenu} id="menuBarIcon"><FontAwesomeIcon icon={faBars} >Menu</FontAwesomeIcon></div>
                   </li>
                 </ul>
-              </nav>
-            ) : (
-              null
-            )}
-          </header>
+              </Nav.Item>
+            </Nav> */}
+
+          {/* </header> */}
         </div>
       </HashRouter>
     );
