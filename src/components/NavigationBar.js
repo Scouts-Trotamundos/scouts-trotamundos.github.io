@@ -48,10 +48,10 @@ class NavigationBar extends Component {
     return (
       <HashRouter>
         <div>
-          <Navbar bg="light" expand="lg" id="header">
+          <Navbar  expand="md" id="header-navbar">
             <Container>
               <IndexLinkContainer to="/">
-                <Navbar.Brand href="/">GS Trotamundos 697</Navbar.Brand>
+                <Navbar.Brand href="/" id="brand-name">GS Trotamundos 697</Navbar.Brand>
               </IndexLinkContainer>
               <Navbar.Toggle aria-controls="basic-navbar-nav" />
               <Navbar.Collapse id="basic-navbar-nav">

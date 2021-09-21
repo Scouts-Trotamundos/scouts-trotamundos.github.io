@@ -1,17 +1,27 @@
-// body{
-//   background: #f1f1f1;
-// }
+body{
+  padding-top:0 !important;
+}
 
-#header{
+#header-navbar{
+  
   div > a{ 
     padding:0;
     font-family: "Raleway", Helvetica, sans-serif;
     border-bottom: 0;
     text-transform: uppercase;
     letter-spacing: 0.05em;
-    padding-left: 1em;
-    padding-right: 1.1em;
+    padding-left: 0.3em;
+    padding-right: 0.6em;
     background-color: inherit;
+    color:rgba(0,0,0,.55);
+    
+  }
+  div > a:hover{
+      color:rgb(86,48,112) !important
+  }
+ 
+  #brand-name{
+        font-weight: 800;
   }
 }
 
