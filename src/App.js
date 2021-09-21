@@ -3,6 +3,8 @@ import React, { useState } from 'react';
 
 import { Route, HashRouter } from "react-router-dom";
 import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
 
 import NavigationBar from './components/NavigationBar';
 import SideBar from './components/SideBar';
@@ -29,14 +31,10 @@ const App = () => {
   }
   return (
     <div className="App">
-      {/* <Container fluid> */}
-        <HashRouter>
+      <Container fluid>
+        {/* <HashRouter>
           <div id="wrapper">
-            {(process.env.REACT_APP_ENVIRONMENT === 'dev') ? (
-              <Menu isToggle={isToggle} onToggleChange={setToggle}></Menu>
-            ) : (
-              null
-            )}
+           
 
             <NavigationBar isToggle={isToggle} onToggleChange={setToggle}  ></NavigationBar>
 
@@ -64,14 +62,45 @@ const App = () => {
               </div>
 
             )}
-
+s
 
             {/* Main */}
 
-            <SideBar></SideBar>
+        {/* <SideBar></SideBar> */}
+        {/* </div> */}
+        {/* </HashRouter> */}
+        <Container fluid>
+          <NavigationBar isToggle={isToggle} onToggleChange={setToggle}  ></NavigationBar>
+        </Container>
+
+        {(process.env.REACT_APP_ENVIRONMENT === 'dev') ? (
+          <Container>
+            <Menu isToggle={isToggle} onToggleChange={setToggle}></Menu>
+          </Container>
+        ) : (
+          null
+        )}
+
+        <HashRouter>
+          <div id="wrapper">
+            <div id="main-articles" onClick={mainOnClickHandler}>
+              <div>
+                <Route exact path="/" component={AboutUs} />
+                <Route path="/sections" component={Sections} />
+                <Route path="/about" component={AboutUs} />
+                <Route path="/faq" component={FAQ} />
+                <Route path="/ubication" component={Ubication} />
+                <Route path="/contact" component={Contact} />
+                <Route path="/section/castores" component={Castores} />
+                <Route path="/section/manada" component={Manada} />
+                <Route path="/section/tropa" component={Tropa} />
+                <Route path="/section/esculta" component={Esculta} />
+                <Route path="/section/clan" component={Clan} />
+              </div>
+            </div>
           </div>
         </HashRouter>
-      {/* </Container> */}
+      </Container>
     </div>
   );
 }

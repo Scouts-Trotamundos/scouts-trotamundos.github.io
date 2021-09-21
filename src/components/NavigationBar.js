@@ -47,9 +47,8 @@ class NavigationBar extends Component {
   render() {
     return (
       <HashRouter>
-        <div>
-          <Navbar expand="md" id="header-navbar">
-            <Container fluid>
+          <Navbar expand="md" id="header-navbar" fixed="top" >
+            <Container fluid="md">
               <IndexLinkContainer to="/">
                 <Navbar.Brand href="/" id="brand-name">GS Trotamundos 697</Navbar.Brand>
               </IndexLinkContainer>
@@ -79,11 +78,6 @@ class NavigationBar extends Component {
                       Sobre nosotr@s
                     </Nav.Link>
                   </IndexLinkContainer >
-                  <IndexLinkContainer to="/faq">
-                    <Nav.Link eventKey="3">
-                      Información
-                    </Nav.Link>
-                  </IndexLinkContainer >
                   <IndexLinkContainer to="/ubication">
                     <Nav.Link eventKey="3">
                       Ubicación
@@ -99,68 +93,6 @@ class NavigationBar extends Component {
               </Navbar.Collapse>
             </Container>
           </Navbar>
-          {/* <header id="header"> */}
-          {/* <Nav variant="pills" activeKey="1" id="toggleable-navbar">
-              <Container>
-                <IndexLinkContainer to="/">
-                  <Nav.Item>
-                    <Nav.Link eventKey="1" className="nav-title" href="/">
-                      GS Trotamundos 697
-                    </Nav.Link>
-                  </Nav.Item>
-                </IndexLinkContainer>
-                <NavDropdown.Divider />
-                <NavDropdown title="Secciones" id="nav-dropdown">
-                  <IndexLinkContainer to="/section/castores">
-                    <NavDropdown.Item eventKey="4.1">Colonia Ottawa</NavDropdown.Item>
-                  </IndexLinkContainer>
-                  <IndexLinkContainer to="/section/manada">
-                    <NavDropdown.Item eventKey="4.2">Manada Natoo</NavDropdown.Item>
-                  </IndexLinkContainer>
-                  <IndexLinkContainer to="/section/tropa">
-                    <NavDropdown.Item eventKey="4.3">Tropa Siksika</NavDropdown.Item>
-                  </IndexLinkContainer>
-                  <IndexLinkContainer to="/section/esculta">
-                    <NavDropdown.Item eventKey="4.4">Esculta Ragnarok</NavDropdown.Item>
-                  </IndexLinkContainer>
-                  <IndexLinkContainer to="/section/clan">
-                    <NavDropdown.Item eventKey="4.5">Clan Bushido</NavDropdown.Item>
-                  </IndexLinkContainer>
-                </NavDropdown>
-                <IndexLinkContainer to="/about">
-                  <Nav.Link eventKey="2">
-                    Sobre nosotr@s
-                  </Nav.Link>
-                </IndexLinkContainer >
-                <IndexLinkContainer to="/faq">
-                  <Nav.Link eventKey="3">
-                    Información
-                  </Nav.Link>
-                </IndexLinkContainer >
-                <IndexLinkContainer to="/ubication">
-                  <Nav.Link eventKey="3">
-                    Ubicación
-                  </Nav.Link>
-                </IndexLinkContainer >
-                <IndexLinkContainer to="/contact">
-                  <Nav.Link eventKey="3">
-                    Contacto
-                  </Nav.Link>
-                </IndexLinkContainer >
-              </Container>
-            </Nav>
-            <Nav className="justify-content-end main" id="toggleable-menu-sidebar">
-              <Nav.Item onClick={this.toggleMenu}>
-                <ul>
-                  <li className="menu">
-                    <div onClick={this.toggleMenu} id="menuBarIcon"><FontAwesomeIcon icon={faBars} >Menu</FontAwesomeIcon></div>
-                  </li>
-                </ul>
-              </Nav.Item>
-            </Nav> */}
-
-          {/* </header> */}
-        </div>
       </HashRouter>
     );
   }

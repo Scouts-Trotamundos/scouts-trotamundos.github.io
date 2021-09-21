@@ -3,6 +3,9 @@ import {
   NavLink,
 } from "react-router-dom";
 
+import Image from 'react-bootstrap/Image'
+
+import fotoTrota from '../assets/images/foto_facebook_trota.jpg';
 class AboutUs extends Component {
   render() {
     return (
@@ -15,7 +18,7 @@ class AboutUs extends Component {
             </div>
 
           </header>
-          <a href="single.html" className="image featured"><img src="images/pic01.jpg" alt="" /></a>
+          <a href={fotoTrota} className="image featured"><Image src={fotoTrota} alt="trota" fluid/></a>
 
           <h2>¿QUIÉNES SOMOS EL GRUPO SCOUT TROTAMUNDOS?</h2>
           <p>Somos una asociación juvenil sin ánimo de lucro, donde niños y niñas de todas las edades reciben educación en valores a través del juego y la práctica. Los chicos y chicas adquieren autonomía, sentido crítico y confianza mientras se divierten.</p>
