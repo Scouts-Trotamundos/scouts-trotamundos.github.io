@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class UnderConstruction extends Component {
   render() {
     return (
-      <div id="main">
+      <div id="underConstruction">
         {/* <!-- Post --> */}
         <article className="post">
           <header>

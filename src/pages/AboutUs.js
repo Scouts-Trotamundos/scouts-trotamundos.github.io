@@ -13,7 +13,7 @@ class AboutUs extends Component {
         {/* <!-- Post --> */}
         <article className="post">
           <header>
-            <div className="title">
+            <div className="title" id="aboutUsTitle">
               <h2>Preguntas y respuestas frecuentes sobre Grupo Scout Trotamundos 697</h2>
             </div>
 
