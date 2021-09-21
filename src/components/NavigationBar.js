@@ -48,13 +48,14 @@ class NavigationBar extends Component {
     return (
       <HashRouter>
         <div>
-          <Navbar  expand="md" id="header-navbar">
-            <Container>
+          <Navbar expand="md" id="header-navbar">
+            <Container fluid>
               <IndexLinkContainer to="/">
                 <Navbar.Brand href="/" id="brand-name">GS Trotamundos 697</Navbar.Brand>
               </IndexLinkContainer>
+              <Nav.Link eventKey="2" className="divider"> </Nav.Link>
               <Navbar.Toggle aria-controls="basic-navbar-nav" />
-              <Navbar.Collapse id="basic-navbar-nav">
+              <Navbar.Collapse id="basic-navbar-nav" className="navbar-divider">
                 <NavDropdown title="Secciones" id="nav-dropdown">
                   <IndexLinkContainer to="/section/castores">
                     <NavDropdown.Item eventKey="4.1">Colonia Ottawa</NavDropdown.Item>

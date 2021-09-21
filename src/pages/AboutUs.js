@@ -11,8 +11,7 @@ class AboutUs extends Component {
         <article className="post">
           <header>
             <div className="title">
-              <h2><a href="single.html">Preguntas y respuestas frecuentes sobre Grupo Scout Trotamundos 697</a></h2>
-              {/* <p>Lorem ipsum dolor amet nullam consequat etiam feugiat</p> */}
+              <h2>Preguntas y respuestas frecuentes sobre Grupo Scout Trotamundos 697</h2>
             </div>
 
           </header>
