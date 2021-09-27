@@ -73,11 +73,6 @@ class NavigationBar extends Component {
                   </IndexLinkContainer>
                 </NavDropdown>
                 <Nav className="me-auto">
-                  <IndexLinkContainer to="/about">
-                    <Nav.Link eventKey="2">
-                      Sobre nosotr@s
-                    </Nav.Link>
-                  </IndexLinkContainer >
                   <IndexLinkContainer to="/ubication">
                     <Nav.Link eventKey="3">
                       Ubicación

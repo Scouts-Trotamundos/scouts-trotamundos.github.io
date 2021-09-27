@@ -18,9 +18,12 @@ body{
     padding-left: 0.3em;
     padding-right: 0.6em;
     background-color: inherit;
-    color:rgba(0,0,0,.55); 
+    color:rgba(0,0,0,.55);
+    
   }
- 
+  .navbar-toggler{
+    font-size: 0.6em !important;
+  }
   #brand-name{
     font-weight: 800;
     font-size: 1.15rem;
@@ -29,6 +32,7 @@ body{
     border-left: 1px solid hsla(0,0%,62.7%,.3);
     padding-left: 1.25rem;
   }
+  
 }
 
 #sidebar{

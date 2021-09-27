@@ -8,7 +8,6 @@ import Col from 'react-bootstrap/Col'
 
 import NavigationBar from './components/NavigationBar';
 import SideBar from './components/SideBar';
-import Menu from './components/Menu';
 
 import Sections from './pages/Sections';
 import Contact from './pages/Contact';
