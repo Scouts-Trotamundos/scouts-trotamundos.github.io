@@ -30,18 +30,10 @@ const App = () => {
   }
   return (
     <div className="App">
-      <Container fluid>
-
-        <HashRouter>
-          {(process.env.REACT_APP_ENVIRONMENT === 'dev') ? (
-            <Container fluid>
-              <NavigationBar isToggle={isToggle} onToggleChange={setToggle}  ></NavigationBar>
-            </Container>
-          ) : (
-            null
-          )}
-
-          {(process.env.REACT_APP_ENVIRONMENT === 'dev') ? (
+      {(process.env.REACT_APP_ENVIRONMENT === 'dev') ? (
+        <Container fluid>
+          <NavigationBar isToggle={isToggle} onToggleChange={setToggle}  ></NavigationBar>
+          <HashRouter>
             <Container fluid>
               <div id="wrapper">
                 <div id="main-articles" onClick={mainOnClickHandler}>
@@ -61,22 +53,20 @@ const App = () => {
                 </div>
               </div>
             </Container>
-          ) : (
-            <Container fluid="xl">
-              <Row className="justify-content-md-center">
-                <Col lg="2"><SideBar></SideBar></Col>
+          </HashRouter>
+        </Container>
+      ) : (
+        <Container fluid="md">
+          <HashRouter>
+              <Row xs={2} lg={6}>
+                <Col ><SideBar></SideBar></Col>
                 <Col ><div>
                   <Route exact path="/" component={UnderConstruction} />
                 </div></Col>
               </Row>
-
-
-            </Container>
-          )}
-
-
-        </HashRouter>
-      </Container>
+          </HashRouter>
+        </Container>
+      )}
     </div>
   );
 }
