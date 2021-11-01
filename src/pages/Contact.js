@@ -8,11 +8,10 @@ class Contact extends Component {
         <article className="post">
           <header>
             <div className="title">
-              <h2><a href="single.html">¿Quieres ponerte en contacto?</a></h2>
+              <h2>¿Quieres ponerte en contacto?</h2>
               
             </div>
           </header>
-          <a href="single.html" className="image featured"><img src="images/pic01.jpg" alt="" /></a>
           <p>Rellena el siguiente formulario con tus datos (<b>En construcción</b>)</p>
               <p>O mándanos un correo electrónico a <a href="mailto: hola@somostrotamundos.org">hola@somostrotamundos.org</a></p>
           {/* <div class="container">

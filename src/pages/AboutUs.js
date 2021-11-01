@@ -5,7 +5,7 @@ import {
 
 import Image from 'react-bootstrap/Image'
 
-import fotoTrota from '../assets/images/foto_facebook_trota.jpg';
+import fotoTrota from '../assets/images/foto_trota_campa_20-21.jpg';
 class AboutUs extends Component {
   render() {
     return (
@@ -18,7 +18,7 @@ class AboutUs extends Component {
             </div>
 
           </header>
-          <a href={fotoTrota} className="image featured"><Image src={fotoTrota} alt="trota" fluid/></a>
+          <a href={fotoTrota} className="image featured"><Image src={fotoTrota} alt="trota" fluid /></a>
 
           <h2>¿QUIÉNES SOMOS EL GRUPO SCOUT TROTAMUNDOS?</h2>
           <p>Somos una asociación juvenil sin ánimo de lucro, donde niños y niñas de todas las edades reciben educación en valores a través del juego y la práctica. Los chicos y chicas adquieren autonomía, sentido crítico y confianza mientras se divierten.</p>
@@ -39,11 +39,31 @@ class AboutUs extends Component {
           <p>Una sección es un agrupación por edad de un grupo de niños y niñas. Esta separación se corresponde con la separación que se suele hacer en los colegios por cursos, para poder trabajar y jugar, por similitud física y mental.</p>
           En este caso, en nuestro grupo, tenemos las siguientes secciones.
           <ul>
-            <li><NavLink to="/section/castores">Colonia Ottawa (6-8 años)</NavLink></li>
-            <li><NavLink to="/section/manada">Manada Nathoo (8-11 años)</NavLink></li>
-            <li><NavLink to="/section/tropa">Tropa Siksika (11-14 años)</NavLink></li>
-            <li><NavLink to="/section/esculta">Esculta Ragnarok (14-17 años)</NavLink></li>
-            <li><NavLink to="/section/clan">Clan Bushido (17-21 años)</NavLink></li>
+            <li>
+              {/* <NavLink to="/section/castores"> */}
+                Colonia Ottawa (6-8 años)
+                {/* </NavLink> */}
+                </li>
+            <li>
+              {/* <NavLink to="/section/manada"> */}
+                Manada Nathoo (8-11 años)
+                {/* </NavLink> */}
+                </li>
+            <li>
+              {/* <NavLink to="/section/tropa"> */}
+                Tropa Siksika (11-14 años)
+                {/* </NavLink> */}
+                </li>
+            <li>
+              {/* <NavLink to="/section/esculta"> */}
+                Esculta Ragnarok (14-17 años)
+                {/* </NavLink> */}
+                </li>
+            <li>
+              {/* <NavLink to="/section/clan"> */}
+                Clan Bushido (17-21 años)
+                {/* </NavLink> */}
+                </li>
           </ul>
 
           <h2>¿CÓMO ENTRAR EN EL GRUPO?</h2>

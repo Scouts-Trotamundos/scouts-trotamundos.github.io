@@ -3,18 +3,14 @@ import React, { useState } from 'react';
 
 import { Route, HashRouter } from "react-router-dom";
 import Container from 'react-bootstrap/Container'
-import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
 
 import NavigationBar from './components/NavigationBar';
-import SideBar from './components/SideBar';
 
 import Sections from './pages/Sections';
 import Contact from './pages/Contact';
 import FAQ from './pages/FAQ';
 import AboutUs from './pages/AboutUs';
 import Ubication from './pages/Ubication';
-import UnderConstruction from './pages/UnderConstruction';
 import Castores from './pages/section/Castores';
 import Manada from './pages/section/Manada';
 import Tropa from './pages/section/Tropa';
@@ -30,7 +26,6 @@ const App = () => {
   }
   return (
     <div className="App">
-      {(process.env.REACT_APP_ENVIRONMENT === 'dev') ? (
         <Container fluid>
           <NavigationBar isToggle={isToggle} onToggleChange={setToggle}  ></NavigationBar>
           <HashRouter>
@@ -55,18 +50,6 @@ const App = () => {
             </Container>
           </HashRouter>
         </Container>
-      ) : (
-        <Container fluid="md">
-          <HashRouter>
-              <Row xs={2} lg={6}>
-                <Col ><SideBar></SideBar></Col>
-                <Col ><div>
-                  <Route exact path="/" component={UnderConstruction} />
-                </div></Col>
-              </Row>
-          </HashRouter>
-        </Container>
-      )}
     </div>
   );
 }
