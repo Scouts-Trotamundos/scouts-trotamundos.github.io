@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/scouts-trotamundos.github.io/static/css/main.1185a58e.chunk.css",
-    "main.js": "/scouts-trotamundos.github.io/static/js/main.48b955ed.chunk.js",
-    "main.js.map": "/scouts-trotamundos.github.io/static/js/main.48b955ed.chunk.js.map",
+    "main.css": "/scouts-trotamundos.github.io/static/css/main.6f649315.chunk.css",
+    "main.js": "/scouts-trotamundos.github.io/static/js/main.fe964885.chunk.js",
+    "main.js.map": "/scouts-trotamundos.github.io/static/js/main.fe964885.chunk.js.map",
     "runtime-main.js": "/scouts-trotamundos.github.io/static/js/runtime-main.f97c2e67.js",
     "runtime-main.js.map": "/scouts-trotamundos.github.io/static/js/runtime-main.f97c2e67.js.map",
     "static/css/2.818011ed.chunk.css": "/scouts-trotamundos.github.io/static/css/2.818011ed.chunk.css",
@@ -12,7 +12,7 @@
     "static/js/3.3c9afcb5.chunk.js.map": "/scouts-trotamundos.github.io/static/js/3.3c9afcb5.chunk.js.map",
     "index.html": "/scouts-trotamundos.github.io/index.html",
     "static/css/2.818011ed.chunk.css.map": "/scouts-trotamundos.github.io/static/css/2.818011ed.chunk.css.map",
-    "static/css/main.1185a58e.chunk.css.map": "/scouts-trotamundos.github.io/static/css/main.1185a58e.chunk.css.map",
+    "static/css/main.6f649315.chunk.css.map": "/scouts-trotamundos.github.io/static/css/main.6f649315.chunk.css.map",
     "static/js/2.19c0700e.chunk.js.LICENSE.txt": "/scouts-trotamundos.github.io/static/js/2.19c0700e.chunk.js.LICENSE.txt",
     "static/media/main.css": "/scouts-trotamundos.github.io/static/media/fa-solid-900.e4efd599.woff",
     "static/media/foto_trota_campa_20-21.ae67b96a.jpg": "/scouts-trotamundos.github.io/static/media/foto_trota_campa_20-21.ae67b96a.jpg"
@@ -21,7 +21,7 @@
     "static/js/runtime-main.f97c2e67.js",
     "static/css/2.818011ed.chunk.css",
     "static/js/2.19c0700e.chunk.js",
-    "static/css/main.1185a58e.chunk.css",
-    "static/js/main.48b955ed.chunk.js"
+    "static/css/main.6f649315.chunk.css",
+    "static/js/main.fe964885.chunk.js"
   ]
 }
