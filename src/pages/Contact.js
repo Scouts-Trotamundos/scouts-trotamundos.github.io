@@ -3,17 +3,35 @@ import React, { Component } from 'react';
 class Contact extends Component {
   render() {
     return (
+      // <div id="main">
+      //   {/* <!-- Post --> */}
+      //   <article className="post">
+      //     <header>
+      //       <div className="title">
+      //         <h2>¿Quieres ponerte en contacto?</h2>
+
+      //       </div>
+      //     </header>
       <div id="main">
         {/* <!-- Post --> */}
         <article className="post">
           <header>
-            <div className="title">
-              <h2>¿Quieres ponerte en contacto?</h2>
-              
+            <div className="title" id="aboutUsTitle">
+              <h2>¿Quieres ponerte en contacto con nosotr@s?</h2>
             </div>
+
           </header>
+
           <p>Rellena el siguiente formulario con tus datos (<b>En construcción</b>)</p>
-              <p>O mándanos un correo electrónico a <a href="mailto: hola@somostrotamundos.org">hola@somostrotamundos.org</a></p>
+          <p>O mándanos un correo electrónico a <a href="mailto: hola@somostrotamundos.org">hola@somostrotamundos.org</a> con la siguiente información:
+            <ul>
+              <li>Nombre completo</li>
+              <li>Fecha de nacimiento (DD/MM/AAAA) </li>
+              <li>Teléfono de contacto </li>
+              <li>Correo electrónico </li>
+              <li>Observaciones (TDA, TDAH, TEA, necesidades especiales...) </li>
+            </ul>
+          </p>
           {/* <div class="container">
             <form action="action_page.php">
 
