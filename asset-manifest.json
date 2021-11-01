@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/scouts-trotamundos.github.io/static/css/main.38f7ea22.chunk.css",
-    "main.js": "/scouts-trotamundos.github.io/static/js/main.1146344d.chunk.js",
-    "main.js.map": "/scouts-trotamundos.github.io/static/js/main.1146344d.chunk.js.map",
+    "main.js": "/scouts-trotamundos.github.io/static/js/main.934dcacd.chunk.js",
+    "main.js.map": "/scouts-trotamundos.github.io/static/js/main.934dcacd.chunk.js.map",
     "runtime-main.js": "/scouts-trotamundos.github.io/static/js/runtime-main.d4703d9c.js",
     "runtime-main.js.map": "/scouts-trotamundos.github.io/static/js/runtime-main.d4703d9c.js.map",
     "static/css/2.818011ed.chunk.css": "/scouts-trotamundos.github.io/static/css/2.818011ed.chunk.css",
@@ -22,6 +22,6 @@
     "static/css/2.818011ed.chunk.css",
     "static/js/2.9faab6f3.chunk.js",
     "static/css/main.38f7ea22.chunk.css",
-    "static/js/main.1146344d.chunk.js"
+    "static/js/main.934dcacd.chunk.js"
   ]
 }
