@@ -25,12 +25,12 @@ class AboutUs extends Component {
 
           <h2>¿ES GRATIS?¿CUÁNTO TENGO QUE PAGAR?</h2>
           <p>
-            La cuota mensual es de 35€, los cuales se destinan a mantener la estructura del grupo, pagar el material necesario para realizar actividades, cubrir el seguro de cada niño y niña y a sufragar una parte muy importante del campamento de verano.
+            La cuota mensual es de 40€, los cuales se destinan a mantener la estructura del grupo, pagar el material necesario para realizar actividades, cubrir el seguro de cada niño y niña y a sufragar una parte muy importante del campamento de verano.
           </p>
 
           <h2>
             ¿CUÁNDO Y DÓNDE NOS REUNIMOS?</h2>
-          <p>Nuestro local lo puedes encontrar en la sección <NavLink to="/ubication">Ubicación</NavLink>.<br></br>Nos reunimos ahí todos los sábados, de 17:00 a 20:00, excepto en casos puntuales como salidas o campamentos, en los que se avisaría con tiempo de antelación de dónde se quedaría.</p>
+          <p>Nuestro local lo puedes encontrar en la sección <NavLink to="/ubication">Ubicación</NavLink>.<br></br>Nos reunimos ahí todos los sábados, de 17:00 a 19:30, excepto en casos puntuales como salidas o campamentos, en los que se avisaría con tiempo de antelación de dónde se quedaría.</p>
 
           <h2>¿QUIÉNES SON LOS SCOUTERS?</h2>
           <p>Son voluntarios y voluntarias que programan las actividades y están a cargo de los chicos y chicas, los cuales tienen una formación amplia y diversa (profesores, pedagogos, enfermeros…), así como la titulación requerida por la Comunidad de Madrid para poder organizar actividades juveniles.</p>
