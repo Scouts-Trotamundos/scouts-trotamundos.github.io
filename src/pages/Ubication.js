@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-
+import {
+  NavLink,
+} from "react-router-dom";
 class Ubication extends Component {
   render() {
     return (
@@ -12,7 +14,7 @@ class Ubication extends Component {
               {/* <p>Lorem ipsum dolor amet nullam consequat etiam feugiat</p> */}
             </div>
           </header>
-          <p>Como podéis leer en la página de dudas, nuestro grupo se reúne las tardes de los sábados en el Colegio de Las Castañeras, en Arroyomolinos</p>
+          <p>Como podéis leer en la <NavLink to="/">página donde resolvemos todas las dudas</NavLink>, nuestro grupo se reúne las tardes de los sábados en el Colegio de Las Castañeras, en Arroyomolinos. A continuación tenéis un mapa para ubicarnos mejor:</p>
           <iframe 
           title="Hogar Scout"
           src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d761.0183309229703!2d-3.9189920810175978!3d40.27412138802538!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd419291fa82f113%3A0xdb6300917dede755!2sPublic%20school%20the%20Casta%C3%B1eras!5e0!3m2!1sen!2ses!4v1629209738004!5m2!1sen!2ses"
