@@ -20,11 +20,11 @@ class SideBar extends Component {
       <HashRouter>
         <div>
           {/* <!-- Sidebar --> */}
-          <section id="sidebar">
+          <section id="sidebar-2">
 
             {/* <!-- Mini Posts --> */}
             <section>
-              <div className="mini-posts">
+              <div className="mini-posts-2">
 
                 <InstagramFeed></InstagramFeed>
               </div>
