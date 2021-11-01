@@ -31,7 +31,7 @@ class AboutUs extends Component {
           <h2>
             ¿CUÁNDO Y DÓNDE NOS REUNIMOS?</h2>
           <p>
-            Nos reunimos en el C.E.I.P Las Castañeras, puedes encontrar más información en nuestro apartado de <NavLink to="/ubication">Ubicación</NavLink>.
+            Nos reunimos en el C.E.I.P Las Castañeras,  puedes encontrar más información en nuestro apartado de <NavLink to="/ubication">Ubicación</NavLink>.
             <br></br>
             Estámos ahí todos los sábados, de 17:00 a 19:30, excepto en casos puntuales como salidas o campamentos, en los que se avisaría con tiempo de antelación de dónde se quedaría.
           </p>
