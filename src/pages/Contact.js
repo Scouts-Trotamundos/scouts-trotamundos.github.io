@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-
 class Contact extends Component {
   render() {
     return (
@@ -12,6 +11,29 @@ class Contact extends Component {
             </div>
           </header>
           <p>Rellena el siguiente formulario con tus datos (<b>En construcción</b>)</p>
+          {/* https://help.formspree.io/hc/en-us/articles/360053239754-Getting-started-with-projects */}
+          <div>
+          <form
+            action="https://formspree.io/f/mbjqvnaq"
+            method="POST"
+          >
+            <label>
+              Nombre :
+              <input type="email" name="_replyto" />
+            </label>
+            <label>
+              Your message:
+              <textarea name="message"></textarea>
+            </label>
+            <button type="submit">Send</button>
+          </form>
+          </div>
+          
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
           O mándanos un correo electrónico a <a href="mailto: hola@somostrotamundos.org">hola@somostrotamundos.org</a> con la siguiente información:
           <ul>
             <li>Nombre completo</li>
