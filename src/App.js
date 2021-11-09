@@ -9,6 +9,7 @@ import NavigationBar from './components/NavigationBar';
 import Contact from './pages/Contact';
 import AboutUs from './pages/AboutUs';
 import Ubication from './pages/Ubication';
+import ContactOk from './pages/ContactOk'
 
 const App = () => {
   const [isToggle, setToggle] = useState(true)
@@ -30,6 +31,7 @@ const App = () => {
                     <Route path="/about" component={AboutUs} />
                     <Route path="/ubication" component={Ubication} />
                     <Route path="/contact" component={Contact} />
+                    <Route path="/contactOk" component={ContactOk} />
                   </div>
                 </div>
               </div>
