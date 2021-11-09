@@ -44,29 +44,19 @@ class AboutUs extends Component {
           En este caso, en nuestro grupo, tenemos las siguientes secciones.
           <ul>
             <li>
-              {/* <NavLink to="/section/castores"> */}
                 Colonia Ottawa (6-8 años)
-                {/* </NavLink> */}
                 </li>
             <li>
-              {/* <NavLink to="/section/manada"> */}
                 Manada Nathoo (8-11 años)
-                {/* </NavLink> */}
                 </li>
             <li>
-              {/* <NavLink to="/section/tropa"> */}
                 Tropa Siksika (11-14 años)
-                {/* </NavLink> */}
                 </li>
             <li>
-              {/* <NavLink to="/section/esculta"> */}
                 Esculta Ragnarok (14-17 años)
-                {/* </NavLink> */}
                 </li>
             <li>
-              {/* <NavLink to="/section/clan"> */}
                 Clan Bushido (17-21 años)
-                {/* </NavLink> */}
                 </li>
           </ul>
 
