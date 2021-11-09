@@ -13,22 +13,32 @@ class Contact extends Component {
           <p>Rellena el siguiente formulario con tus datos (<b>En construcción</b>)</p>
           {/* https://help.formspree.io/hc/en-us/articles/360053239754-Getting-started-with-projects */}
           <div>
-          <form
-            action="https://formspree.io/f/mbjqvnaq"
-            method="POST"
-          >
-            <label>
-              Nombre :
-              <input type="email" name="_replyto" />
-            </label>
-            <label>
-              Your message:
-              <textarea name="message"></textarea>
-            </label>
-            <button type="submit">Send</button>
-          </form>
+            <form
+              action="https://formspree.io/f/mbjqvnaq"
+              method="POST"
+            >
+              <label>
+                Nombre completo:
+                <input type="text" name="Nombre" />
+              </label>
+              <label>
+                Correo electrónico:
+                <input type="email" name="Email:" />
+              </label>
+              <label for="birthday">Fecha de nacimiento:<br/>
+                <input type="birthday" name="Fecha de nacimiento" id="birthday" placeholder="DD/MM/AAAA" />
+              </label>
+              <label for="telephone">Número de teléfono<br/>
+                <input type="telephone" name="Teléfono" id="telephone" placeholder="Teléfono"/>
+              </label>
+              <label>
+              Observaciones (TDA, TDAH, TEA, necesidades especiales...):
+                <textarea name="Observaciones"></textarea>
+              </label>
+              <button type="submit">Send</button>
+            </form>
           </div>
-          
+
           <br></br>
           <br></br>
           <br></br>
