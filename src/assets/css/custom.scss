@@ -48,3 +48,9 @@ select:focus, textarea:focus{
 input{
   border: 1px solid rgba(128, 128, 128, 0.4);
 }
+#main > article > div > form > div > label > div,
+#main > article > div > form > div > div > label > div
+{
+  opacity: 30%;
+  font-weight: 500;
+}

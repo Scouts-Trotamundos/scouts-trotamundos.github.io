@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 
-
 import ContactForm from '../components/ContactForm'
 
 class Contact extends Component {
@@ -15,14 +14,7 @@ class Contact extends Component {
             </div>
           </header>
           <ContactForm />
-          O mándanos un correo electrónico a <a href="mailto: hola@somostrotamundos.org">hola@somostrotamundos.org</a> con la siguiente información:
-          <ul>
-            <li>Nombre completo</li>
-            <li>Fecha de nacimiento (DD/MM/AAAA) </li>
-            <li>Teléfono de contacto </li>
-            <li>Correo electrónico </li>
-            <li>Observaciones (TDA, TDAH, TEA, necesidades especiales...) </li>
-          </ul>
+
           <footer>
           </footer>
         </article>
