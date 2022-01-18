@@ -51,6 +51,6 @@ input{
 #main > article > div > form > div > label > div,
 #main > article > div > form > div > div > label > div
 {
-  opacity: 30% !important;
+  opacity: 0.3 !important; //This change to 1%  for no reasons
   font-weight: 500;
 }
