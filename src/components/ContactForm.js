@@ -31,14 +31,14 @@ function ContactForm() {
       <form onSubmit={handleSubmit} >
         <Row>
           <label htmlFor="name">
-            Nombre completo
+            Nombre completo de la persona que está contactando
             <input
               type="text"
               name="Nombre"
               id="name"
               required />
             <ValidationError
-              prefix="Nombre completo"
+              prefix="Nombre "
               field="name"
               errors={[
                 {
@@ -75,6 +75,30 @@ function ContactForm() {
 
         <Row>
           <Col>
+            <label htmlFor="child_name">
+              Nombre completo del niño o niña
+              <input
+                type="text"
+                name="Nombre del niñx"
+                id="name"
+                required />
+              <ValidationError
+                prefix="Nombre completo del niño o niña "
+                field="name"
+                errors={[
+                  {
+                    field: 'name',
+                    message: 'con apellidos',
+                    code: 'TYPE_TEXT'
+                  }
+                ]}
+              />
+            </label>
+          </Col>
+        </Row>
+
+        <Row>
+          <Col>
             <label htmlFor="birthday"  >Fecha de nacimiento:<br />
               <input type="birthday" name="Fecha de nacimiento" id="birthday" placeholder="DD/MM/AAAA" required />
               <ValidationError
@@ -82,13 +106,14 @@ function ContactForm() {
                 errors={[
                   {
                     field: 'birthday',
-                    message: 'Debe contener una fecha válida en formato DD/MM/AAAA',
+                    message: 'Fecha formato DD/MM/AAAA',
                     code: 'TYPE_NUMERIC'
                   }
                 ]}
               />
             </label>
           </Col>
+
           <Col>
             <label htmlFor="telephone"  >Número de teléfono<br />
               <input type="telephone" name="Teléfono" id="telephone" placeholder="Teléfono" required />
@@ -97,7 +122,7 @@ function ContactForm() {
                 errors={[
                   {
                     field: 'telephone',
-                    message: 'Debe contener un teléfono en formato AAA-BBB-CCC.',
+                    message: 'Teléfono en formato AAA-BBB-CCC.',
                     code: 'TYPE_NUMERIC'
                   }
                 ]}
@@ -124,15 +149,6 @@ function ContactForm() {
         <button type="submit" disabled={state.submitting}>Enviar</button>
         <input type="hidden" name="_language" value="es" />
       </form>
-
-      O mándanos un correo electrónico a <a href="mailto: hola@somostrotamundos.org">hola@somostrotamundos.org</a> con la siguiente información:
-      <ul>
-        <li>Nombre completo</li>
-        <li>Fecha de nacimiento (DD/MM/AAAA) </li>
-        <li>Teléfono de contacto </li>
-        <li>Correo electrónico </li>
-        <li>Observaciones (TDA, TDAH, TEA, necesidades especiales...) </li>
-      </ul>
     </Container>
   );
 }
