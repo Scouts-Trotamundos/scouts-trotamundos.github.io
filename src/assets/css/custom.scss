@@ -38,24 +38,19 @@ body{
     flex-grow: 1;
   }
 }
-// #sidebar{
-//   width: unset !important;
-//   min-width: 1em;
-// }
-// .mini-posts{
-//   all:unset !important;
-// }
-// #sidebar{
-//   min-width: unset !important;
-//   width: 13em !important;
-//   section > div > div > article > header > h3 > a{
-//     margin-left: 0.5em;
-//   }
-// }
-// #underConstruction{
-//   margin-left: 1.5em;
-// }
-
-// #aboutUsTitle{
-//   display:none
-// }
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+select:focus, textarea:focus{
+  border-color: rgb(100, 0, 199);
+}
+input{
+  border: 1px solid rgba(128, 128, 128, 0.4);
+}
+#main > article > div > form > div > label > div,
+#main > article > div > form > div > div > label > div
+{
+  opacity: 30%;
+  font-weight: 500;
+}

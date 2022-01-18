@@ -13,10 +13,6 @@ import Ubication from './pages/Ubication';
 const App = () => {
   const [isToggle, setToggle] = useState(true)
 
-  function mainOnClickHandler(e) {
-    isToggle ? setToggle(isToggle) : setToggle(!isToggle)
-    console.log(e)
-  }
   return (
     <div className="App">
         <Container fluid>
@@ -24,7 +20,7 @@ const App = () => {
           <HashRouter>
             <Container fluid>
               <div id="wrapper">
-                <div id="main-articles" onClick={mainOnClickHandler}>
+                <div id="main-articles">
                   <div>
                     <Route exact path="/" component={AboutUs} />
                     <Route path="/about" component={AboutUs} />
