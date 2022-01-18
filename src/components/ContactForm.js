@@ -132,7 +132,7 @@ function ContactForm() {
         </Row>
 
         <Row>
-          <label htmlFor="observations"  >  Observaciones (TDA, TDAH, TEA, necesidades especiales...):
+          <label htmlFor="observations"  >  Observaciones (alergias, miedos, TDA, TDAH, TEA, necesidades especiales...):
             <textarea name="Observaciones" id="observations" required></textarea>
             <ValidationError
               field="observations"
