@@ -1,27 +1,28 @@
 {
   "files": {
-    "main.css": "/scouts-trotamundos.github.io/static/css/main.38f7ea22.chunk.css",
-    "main.js": "/scouts-trotamundos.github.io/static/js/main.934dcacd.chunk.js",
-    "main.js.map": "/scouts-trotamundos.github.io/static/js/main.934dcacd.chunk.js.map",
-    "runtime-main.js": "/scouts-trotamundos.github.io/static/js/runtime-main.d4703d9c.js",
-    "runtime-main.js.map": "/scouts-trotamundos.github.io/static/js/runtime-main.d4703d9c.js.map",
+    "main.css": "/scouts-trotamundos.github.io/static/css/main.988f88fb.chunk.css",
+    "main.js": "/scouts-trotamundos.github.io/static/js/main.81949e49.chunk.js",
+    "main.js.map": "/scouts-trotamundos.github.io/static/js/main.81949e49.chunk.js.map",
+    "runtime-main.js": "/scouts-trotamundos.github.io/static/js/runtime-main.c1810889.js",
+    "runtime-main.js.map": "/scouts-trotamundos.github.io/static/js/runtime-main.c1810889.js.map",
     "static/css/2.818011ed.chunk.css": "/scouts-trotamundos.github.io/static/css/2.818011ed.chunk.css",
-    "static/js/2.9faab6f3.chunk.js": "/scouts-trotamundos.github.io/static/js/2.9faab6f3.chunk.js",
-    "static/js/2.9faab6f3.chunk.js.map": "/scouts-trotamundos.github.io/static/js/2.9faab6f3.chunk.js.map",
-    "static/js/3.ea0adac5.chunk.js": "/scouts-trotamundos.github.io/static/js/3.ea0adac5.chunk.js",
-    "static/js/3.ea0adac5.chunk.js.map": "/scouts-trotamundos.github.io/static/js/3.ea0adac5.chunk.js.map",
+    "static/js/2.a09bc187.chunk.js": "/scouts-trotamundos.github.io/static/js/2.a09bc187.chunk.js",
+    "static/js/2.a09bc187.chunk.js.map": "/scouts-trotamundos.github.io/static/js/2.a09bc187.chunk.js.map",
+    "static/js/3.9cd1a56d.chunk.js": "/scouts-trotamundos.github.io/static/js/3.9cd1a56d.chunk.js",
+    "static/js/3.9cd1a56d.chunk.js.map": "/scouts-trotamundos.github.io/static/js/3.9cd1a56d.chunk.js.map",
     "index.html": "/scouts-trotamundos.github.io/index.html",
     "static/css/2.818011ed.chunk.css.map": "/scouts-trotamundos.github.io/static/css/2.818011ed.chunk.css.map",
-    "static/css/main.38f7ea22.chunk.css.map": "/scouts-trotamundos.github.io/static/css/main.38f7ea22.chunk.css.map",
-    "static/js/2.9faab6f3.chunk.js.LICENSE.txt": "/scouts-trotamundos.github.io/static/js/2.9faab6f3.chunk.js.LICENSE.txt",
+    "static/css/main.988f88fb.chunk.css.map": "/scouts-trotamundos.github.io/static/css/main.988f88fb.chunk.css.map",
+    "static/js/2.a09bc187.chunk.js.LICENSE.txt": "/scouts-trotamundos.github.io/static/js/2.a09bc187.chunk.js.LICENSE.txt",
     "static/media/main.css": "/scouts-trotamundos.github.io/static/media/fa-solid-900.e4efd599.woff",
+    "static/media/favicon.c49c6d59.ico": "/scouts-trotamundos.github.io/static/media/favicon.c49c6d59.ico",
     "static/media/foto_trota_campa_20-21.ae67b96a.jpg": "/scouts-trotamundos.github.io/static/media/foto_trota_campa_20-21.ae67b96a.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.d4703d9c.js",
+    "static/js/runtime-main.c1810889.js",
     "static/css/2.818011ed.chunk.css",
-    "static/js/2.9faab6f3.chunk.js",
-    "static/css/main.38f7ea22.chunk.css",
-    "static/js/main.934dcacd.chunk.js"
+    "static/js/2.a09bc187.chunk.js",
+    "static/css/main.988f88fb.chunk.css",
+    "static/js/main.81949e49.chunk.js"
   ]
 }
