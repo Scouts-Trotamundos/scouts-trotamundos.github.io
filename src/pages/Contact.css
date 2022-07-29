@@ -1,0 +1,9 @@
+#contact-selector-div {
+  margin-bottom: 0.7em;
+}
+
+@media (min-width:0px ) and (max-width: 806px) {
+  .btn-type-selector {
+    margin:.5em
+  }
+}

@@ -2,6 +2,8 @@ import React, { useState } from "react";
 
 import ContactForm from "../components/ContactForm/ContactForm";
 
+import "./Contact.css";
+
 const Contact = () => {
   const [isAnswered, setIsAnswered] = useState(false);
   const [isScouter, setIsScouter] = useState(false);
@@ -15,10 +17,12 @@ const Contact = () => {
           </div>
         </header>
         {!isAnswered && (
-          <div className="text-center">
+          <div className="text-center" id="contact-selector-div">
             <h2>¿Qué quieres ser?</h2>
             <div>
               <button
+                type="button"
+                className="btn-type-selector"
                 onClick={() => {
                   setIsScouter(true);
                   setIsAnswered(true);
@@ -27,6 +31,8 @@ const Contact = () => {
                 Quiero ser Scouter (Monitor/Monitora)
               </button>
               <button
+                type="button"
+                className="btn-type-selector"
                 onClick={() => {
                   setIsScouter(false);
                   setIsAnswered(true);
