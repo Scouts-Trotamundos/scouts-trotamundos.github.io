@@ -1,6 +1,7 @@
 import Row from "react-bootstrap/Row";
 
 import { ValidationError } from "@formspree/react";
+
 const ContactPartsText = (props) => {
   return (
     <Row>
@@ -16,7 +17,7 @@ const ContactPartsText = (props) => {
           />
         )}
         {props.isTextArea && (
-          <textarea name="Observaciones" id="observations" required></textarea>
+          <textarea name={props.name} id={props.name} required></textarea>
         )}
         <ValidationError
           prefix={props.name + " "}

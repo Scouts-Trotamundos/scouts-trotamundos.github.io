@@ -4,7 +4,7 @@ import Navbar from "react-bootstrap/Navbar";
 import { IndexLinkContainer } from "react-router-bootstrap";
 
 import ContactFormKids from "./ContactFormKids";
-import ContactFormScouters from "./ContactFormScouters";
+import ContactFormScouters from "./ContactFormScouters/ContactFormScouters";
 
 import "./ContactForm.css";
 const ContactForm = (props) => {

@@ -5,7 +5,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
-import ContactPartsText from "./ContactParts/ContactPartsText";
+import ContactPartsText from "../ContactParts/ContactPartsText.js";
 
 const ContactFormScouters = (props) => {
   return (
@@ -51,9 +51,7 @@ const ContactFormScouters = (props) => {
           </Col>
         </Row>
         <ContactPartsText
-          label="Observaciones (alergias, miedos, TDA, TDAH, TEA, necesidades
-            especiales...):"
-          validationErrorMessage="es obligatorio; Si no hay observaciones poner 'nada' "
+          label="Cuéntanos sobre ti (a qué te dedicas, edad, aficiones y todo lo que creas que pueda ser de interés):"
           name="Obervaciones"
           type="TYPE_TEXT"
           required={true}
