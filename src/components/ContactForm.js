@@ -122,7 +122,7 @@ function ContactForm() {
                 errors={[
                   {
                     field: 'telephone',
-                    message: 'Teléfono en formato AAA-BBB-CCC.',
+                    message: 'Teléfono en formato AAABBBCCC.',
                     code: 'TYPE_NUMERIC'
                   }
                 ]}
